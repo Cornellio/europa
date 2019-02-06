@@ -4,14 +4,7 @@ These scripts are examples of Nagios checks I have written. They were adapted fr
 
 The checks are designed to monitor the Europa web application with Nagios. `check_europa_open_files.py` is for monitoring the number of open transaction files, and `check_europa_tx_time.py`, for analyzing average transaction time from the application log.
 
-The programs will display a single line status message to STDOUT and issue an exit code for use by Nagios that corresponds to the result of the check. The exit codes are:
-
-  | Exit Code | Status |
-  | --------------------- |
-  | 0 | OK |
-  | 1 | WARNING |
-  | 2 | CRITICAL |
-  | 3 | UNKNOWN |
+The programs will display a single line status message to STDOUT and issue an exit code for use by Nagios that corresponds to the result of the check.
 
 ### Dependencies
 
