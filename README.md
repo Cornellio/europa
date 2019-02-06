@@ -6,12 +6,12 @@ The checks are designed to monitor the Europa web application with Nagios. `chec
 
 The programs will display a single line status message to STDOUT and issue an exit code for use by Nagios that corresponds to the result of the check. The exit codes are:
 
-| Exit Code | Status |
-| --------------------- |
-| 0 | OK |
-| 1 | WARNING |
-| 2 | CRITICAL |
-| 3 | UNKNOWN |
+  | Exit Code | Status |
+  | --------------------- |
+  | 0 | OK |
+  | 1 | WARNING |
+  | 2 | CRITICAL |
+  | 3 | UNKNOWN |
 
 ### Dependencies
 
