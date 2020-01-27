@@ -1,16 +1,16 @@
 ### Introduction
 
-These scripts are examples of Nagios checks I have written. They were adapted from checks used on a real web applicaiton but details have been changed to protect proprietary information. The name Europa is made up, inspired by one of the moons of Jupiter.
+These are Nagios checks I wrote for an application I ran in production. The name Europa was changed from the actual application name and proprietary information has been removed.
 
-The checks are designed to monitor the Europa web application with Nagios. `check_europa_open_files.py` is for monitoring the number of open transaction files, and `check_europa_tx_time.py`, for analyzing average transaction time from the application log.
+The script `check_europa_open_files.py` monitors the number of open transaction files, and `check_europa_tx_time.py` analyzes the average transaction time for the application.
 
-The programs will display a single line status message to STDOUT and issue an exit code for use by Nagios that corresponds to the result of the check.
+The scripts conform to the [Nagios Plugin API](https://assets.nagios.com/downloads/nagioscore/docs/nagioscore/3/en/pluginapi.html), so when executed they will display a single line status message to STDOUT and issue an exit code that corresponds to the result of the check.
 
 ### Dependencies
 
 Python and the standard library is used.  There are no build requirements nor additional Python packages needed.
 
-The programs have been tested on Debian 8 with Python 2.7 and 3.4.  They will use whichever Python version is set as the system default, usually Python 2, but either version 2 or 3 may be used. You may run `python --version` to see which version runs by default on your system.
+I've tested on Debian 8 with Python 2.7 and 3.4.
 
 If you wish to use Python 3 instead of 2, use your system package manager to install it and set a symlink to the particular version you install, for example:
 
@@ -19,9 +19,7 @@ If you wish to use Python 3 instead of 2, use your system package manager to ins
 
 ### Running
 
-Make the scripts executable with `chmod +x check_europa*.py` and run them from any location.
-
-Running the programs without their required arguments or with `--help` will display usage information and exit with a status of 3.
+Use these with Nagios as you would any other plugin.
 
 #### Check Open Files
 
