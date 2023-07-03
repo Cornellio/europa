@@ -12,7 +12,7 @@ Python and the standard library is used.  There are no build requirements nor ad
 
 I've tested on Debian 8 with Python 2.7 and 3.4.
 
-If you wish to use Python 3 instead of 2, use your system package manager to install it and set a symlink to the particular version you install, for example:
+If you wish to use Python 3 instead of 2, use your system package manager to install it and set a symlink to the particular version you installed, for example:
 
 	$ sudo apt-get install python3
  	$ sudo ln -sf /usr/bin/python3.4 /usr/bin/python
